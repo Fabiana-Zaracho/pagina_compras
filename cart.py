@@ -1,4 +1,7 @@
+
+
 class Cart:
+    from ownable import set_owner
     from item_manager import show_items
 
     def __init__(self, owner):
