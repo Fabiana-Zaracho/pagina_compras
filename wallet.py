@@ -1,10 +1,8 @@
-
+from ownable import set_owner
 
 class Wallet:
-    from ownable import set_owner
-
     def __init__(self, owner):
-        self.set_owner(owner)
+        set_owner(self, owner)
         self.balance = 0
 
     def deposit(self, amount):
